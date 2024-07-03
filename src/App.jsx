@@ -1,7 +1,7 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { ListCheck } from "lucide-react";
+import { ListChecks } from "lucide-react"; // Corrected import
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Layout from "./layouts/sidebar"; // updated to use sidebar layout
 import Index from "./pages/Index.jsx";
@@ -11,7 +11,7 @@ export const navItems = [
   {
     title: "Todo App", // updated title
     to: "/",
-    icon: <ListCheck className="h-4 w-4" />, // updated icon
+    icon: <ListChecks className="h-4 w-4" />, // updated icon
   },
 ];
 
